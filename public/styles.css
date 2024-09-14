@@ -262,6 +262,12 @@ input:checked + label:before {
         width:400px;
     }
 }
+@media (max-width: 375px) {
+    .topbar img{
+        width:365px;
+        margin-left: -20px;
+    }
+}
 @media (max-width: 320px) {
     .topbar img{
         width:310px;
