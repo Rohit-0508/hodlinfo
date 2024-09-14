@@ -1,0 +1,270 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto for modern look */
+    background-color: #191d28;
+    color: #fff; /* Default text color white */
+    margin: 0;
+    padding: 0px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 50px auto;
+    background-color: #232836; /* Dark background for container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White text for headings */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* Larger font size */
+    color: #fff; /* White text for table */
+}
+
+/* Table header styling */
+th {
+    background-color: #2c303b; /* Darker background for header */
+    color: #a5a9b4; /* Light grey text for headers */
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table row and cell styling */
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #3a3f4a; /* Darker border color */
+    color: #e5e7eb; /* Light color for table text */
+}
+
+/* Highlight rows on hover */
+tr:hover {
+    background-color: #2c303b; /* Same as header background */
+}
+
+
+/* Styling for the "Difference" and "Savings" cells */
+td:nth-child(5) {
+    color: #e74c3c; /* Red color for negative values */
+}
+
+td:nth-child(6) {
+    color: #2ecc71; /* Green color for savings or positive values */
+}
+
+/* Table footer (optional) */
+tfoot {
+    background-color: #2c303b; /* Consistent footer styling */
+    color: #fff;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.logo {
+    max-height: 50px; /* Adjust size if necessary */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #2a2f3f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b4252;
+}
+
+/* Currency and crypto buttons */
+.currency-btn, .crypto-btn {
+    background-color: #323644;
+}
+
+/* Buy BTC button */
+.buy-btn {
+    background-color: #434c5e;
+}
+
+/* Telegram icon styling */
+.telegram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram img {
+    height: 50px;
+}
+
+/* Toggle switch */
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 26px;
+    margin-left: 10px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444b57;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.toggle-switch label:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + label {
+    background-color: #5f6672;
+}
+
+input:checked + label:before {
+    transform: translateX(24px);
+}
+
+/* General topbar styling */
+.topbar {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile & Tablet View */
+
+/* Tablet view: 768px to 1024px */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+
+    .container {
+        width: 95%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on tablet */
+    }
+    .topbar img{
+        width:850px;
+    }
+}
+
+/* Mobile view: 767px and below */
+@media (max-width: 769px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%; /* Full-width buttons */
+        padding: 10px;
+    }
+
+    .logo {
+        max-height: 40px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px; /* Smaller font size on mobile */
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .telegram img {
+        height: 40px;
+    }
+    .topbar img{
+        width:700px;
+    }
+}
+
+@media (max-width: 430px) {
+    .topbar img{
+        width:400px;
+    }
+}
+@media (max-width: 320px) {
+    .topbar img{
+        width:310px;
+        margin-left: -20px;
+    }
+}

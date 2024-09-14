@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/hodlinfo.png" alt="Hodlinfo Logo" class="logo">
+        <div class="buttons">
+            <button class="currency-btn">INR ▼</button>
+            <button class="crypto-btn">BTC ▼</button>
+            <button class="buy-btn">BUY BTC</button>
+        </div>
+        <div class="telegram">
+            <img src="images/telegram.png" alt="Telegram Icon"> 
+            <div class="toggle-switch">
+                
+                <input type="checkbox" id="toggle">
+                <label for="toggle"></label>
+            </div>
+        </div>
+
+    </div>
+    <div class="topbar">
+        <img src="images/topbar.png" alt="">
+    </div>
+    <div class="container">
+        
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Price</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here by script.js -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
